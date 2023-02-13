@@ -1,18 +1,125 @@
+:root {
+  --primary: #0d6efd;
+  --secondary: #fff;
+  --bg: rgba(13, 36, 56, 1);
+  --navBg: rgb(10, 34, 54);
+  --fontSize: 1.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
 
 body {
   height: auto;
   margin: 10px;
-  background-color: rgba(13, 36, 56, 1);
+  background-color: var(--bg);
   font-family: 'Sono', sans-serif;
 }
 
-/* Nav */
-.nav a {
-  color: white;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--navBg);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
 }
 
-.nav .nav-item {
-  font-size: 20px;
+.navbar .navbar-nav a {
+  color: var(--secondary);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #48cae4;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #48cae4;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: var(--secondary);
+  margin: 0 1rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #48cae4;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 65%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--secondary);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--navBg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
 }
 
 /* Header Me */
