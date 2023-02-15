@@ -83,10 +83,8 @@ body {
 
 /* Hero section */
 .hero {
-  margin-top: 7grem;
+  margin-top: 7rem;
   min-height: 50vh;
-  display: flex;
-  align-items: center;
   /* background-image: url('../img/rocket-header.svg');
   background-repeat: no-repeat;
   background-position: 75%;
@@ -94,23 +92,34 @@ body {
 }
 
 .hero .row-new {
-  padding: 1rem 17%;
+  padding: 10rem 10%;
   margin: 0 5rem;
   display: flex;
   align-items: center;
 }
 
 .hero .row-new .hero-name {
+  flex: 1 1 45rem;
   padding: 0 1rem;
   min-width: 30rem;
 }
 
+.hero .row-new .hero-name h1 {
+  font-size: 2.3rem;
+}
+
+.hero .row-new .hero-name h5 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 .hero .row-new .hero-img {
-  text-align: center;
+  flex: 1 1 35rem;
 }
 
 .hero .row-new .hero-img img {
-  width: 80%;
+  width: 90%;
 }
 
 .hero .row-new .hero-name .btnCV {
@@ -127,7 +136,7 @@ body {
   padding: 10rem 10% var(--font-size);
 }
 
-.about .row-new{
+.about .row-new {
   display: flex;
 }
 
@@ -137,7 +146,7 @@ body {
 }
 
 .about .row-new .about-img img {
-  width: 70%;
+  width: 65%;
 }
 
 .about .row-new .content {
@@ -146,13 +155,13 @@ body {
 }
 
 .about .row-new .content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 1em;
 }
 
 .about .row-new .content p {
   margin-bottom: 0.8rem;
-  font-size: var(--font-size);
+  font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.6;
 }
@@ -163,11 +172,17 @@ body {
 }
 
 .experience h2, .project h2 {
+  font-size: 1.6rem;
   text-align: center;
+}
+
+.experience .row-new h3 {
+  font-size: 1.4rem;
 }
 
 .experience .experience-paragraph, .project p {
   text-align: center;
+  font-size: 1.2rem;
   max-width: 30rem;
   margin: auto;
   font-weight: 100;
@@ -207,7 +222,7 @@ body {
 .project .row-new {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 3rem;
   justify-content: center;
 }
 
@@ -313,6 +328,26 @@ body {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .hero .row-new {
+    padding: 5rem 10%;
+    flex-wrap: wrap;
+  }
+
+  .hero .row-new .hero-name h1 {
+    font-size: 2rem;
+  }
+  
+  .hero .row-new .hero-name h5 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero .row-new .hero-img img {
+    margin-top: 3rem;
+    width: 90%;
   }
 
   .about .row-new {
