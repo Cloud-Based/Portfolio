@@ -278,14 +278,14 @@ body {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
   html {
     font-size: 75%;
   }
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media screen and (max-width: 758px) {
   html {
     font-size: 65%;
   }
@@ -381,7 +381,7 @@ body {
 }
 
 /* Mobile Phone */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   html {
     font-size: 60%;
   }
