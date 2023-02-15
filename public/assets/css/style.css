@@ -1,9 +1,10 @@
 :root {
   --primary: #0d6efd;
   --secondary: #fff;
+  --color-card: rgba(30, 56, 81, 1);
   --bg: rgba(13, 36, 56, 1);
-  --navBg: rgb(10, 34, 54);
-  --fontSize: 1.4rem;
+  --nav-bg: rgb(10, 34, 54);
+  --font-size: 1.4rem;
 }
 
 * {
@@ -25,11 +26,12 @@ body {
 
 /* Navbar */
 .navbar {
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10%;
-  background-color: var(--navBg);
+  background-color: var(--nav-bg);
   position: fixed;
   top: 0;
   right: 0;
@@ -81,35 +83,37 @@ body {
 
 /* Hero section */
 .hero {
-  margin-top: 7rem;
+  margin-top: 7grem;
   min-height: 50vh;
   display: flex;
   align-items: center;
-  background-image: url('../img/rocket-header.svg');
+  /* background-image: url('../img/rocket-header.svg');
   background-repeat: no-repeat;
   background-position: 75%;
-  background-size: 30rem;
+  background-size: 30rem; */
 }
 
-.hero .content {
+.hero .row-new {
   padding: 1rem 17%;
   margin: 0 5rem;
-  max-width: 60rem;
+  display: flex;
+  align-items: center;
 }
 
-.hero .content h1 {
-  font-size: 3.5em;
+.hero .row-new .hero-name {
+  padding: 0 1rem;
+  min-width: 30rem;
 }
 
-.hero .content h2 {
-  font-size: 2.5em;
+.hero .row-new .hero-img {
+  text-align: center;
 }
 
-.hero .content h5 {
-  margin-top: 1rem;
+.hero .row-new .hero-img img {
+  width: 80%;
 }
 
-.hero .content .btnCV {
+.hero .row-new .hero-name .btnCV {
   margin-top: 2rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -120,10 +124,10 @@ body {
 
 /* About section */
 .about {
-  padding: 10rem 10% var(--fontSize);
+  padding: 10rem 10% var(--font-size);
 }
 
-.about .row-new {
+.about .row-new{
   display: flex;
 }
 
@@ -148,15 +152,26 @@ body {
 
 .about .row-new .content p {
   margin-bottom: 0.8rem;
-  font-size: var(--fontSize);
+  font-size: var(--font-size);
   font-weight: 100;
   line-height: 1.6;
 }
 
-/* Experiences & Education */
-.experience {
-  padding: 10rem 10% var(--fontSize);
+/* Experience & Education */
+.experience, .project {
+  padding: 10rem 10% var(--font-size);
+}
+
+.experience h2, .project h2 {
   text-align: center;
+}
+
+.experience .experience-paragraph, .project p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
 }
 
 .experience .row-new {
@@ -182,6 +197,40 @@ body {
 
 .experience .row-new .education .card {
   max-width: 30rem;
+}
+
+/* Project */
+.project h3 {
+  margin-top: 1rem;
+}
+
+.project .row-new {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.project .row-new .project-card {
+  text-align: center;
+  background-color: var(--color-card);
+  border-radius: 10% 0 10% 0;
+  margin: 0rem 1rem 4rem;
+}
+
+.project .row-new .project-card img {
+  border-radius: 10% 0 10% 0;
+  width: 15rem;
+}
+
+.project .row-new .project-card .project-card-title {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.project .row-new .project-card .project-card-category{
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 /* Back to Top */
@@ -241,12 +290,17 @@ body {
     flex-direction: column;
   }
 
+  .navbar img {
+    width: 4.5rem;
+    height: 4rem;
+  }
+
   .navbar .navbar-nav.active {
     right: 0;
   }
 
   .navbar .navbar-nav a {
-    color: var(--navBg);
+    color: var(--nav-bg);
     display: block;
     margin: 1.5rem 1.5rem 0.5rem;
     padding: 0.5rem;
@@ -284,6 +338,10 @@ body {
 
   .experience .row-new .education .card {
     max-width: 100%;
+  }
+
+  .project .row-new .project-card img {
+    width: 20rem;
   }
 }
 
