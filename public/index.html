@@ -1,209 +1,463 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syaiful's Portfolio</title>
+<html lang="en">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon.png" type="image/png" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap 5 | CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Navbar Start-->
-    <nav class="navbar">
-      <a class="navbar-logo" href="#">
-        <img
-          src="assets/img/favicon/favicon.png"
-          alt=""
-          width="60"
-          height="50"
-        />
-      </a>
+  <title>Syaiful's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-      <div class="navbar-nav">
-        <a href="#about">Tentang Saya</a>
-        <a href="#experience">Pengalaman</a>
-        <a href="#project">Proyek</a>
-      </div>
-      <div class="navbar-extra">
-        <ul class="nav justify-content-center">
-          <li>
-            <a class="btn btn-lg btn-primary" href="mailto:aq.syaiful@gmail.com"
-              >Hire me</a
-            >
-          </li>
-          <li>
-            <a id="hamburger-menu" style="font-size: 2rem"
-              ><i class="fa-solid fa-bars"></i
-            ></a>
-          </li>
+  <!-- Favicons -->
+  <link href="assets/img/favicon-2.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Syaiful Akromul Qodri</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <h2>I'm a passionate <span>Web Developer</span> from Yogyakarta</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <!-- Navbar End-->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-    <!-- Hero section start -->
-    <section class="hero">
-      <div class="row-new">
-        <div class="hero-name">
-          <h1>Halo, saya Syaiful</h1>
-          <h5>Back-End Developer</h5>
-          <a
-            href="https://drive.google.com/file/d/1n1RcIytDpgs_0aKQPGXsY__1emhnwzGF/view?usp=drive_link"
-            class="btn btn-outline-primary btnCV"
-            >Unduh CV</a
-          >
-        </div>
-        <div class="hero-img">
-          <img src="assets/img/rocket-header.svg" alt="Hero 1" />
-        </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/sya.akrq" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sya-akrq" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-    </section>
-    <!-- Hero section end -->
 
-    <!-- About section start -->
-    <section id="about" class="about">
-      <div class="row-new">
-        <div class="about-img">
-          <img src="assets/img/profile-about.svg" alt="Tentang Saya" />
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.jpg" class="img-fluid" alt="">
         </div>
-        <div class="content">
-          <h2>Tentang Saya</h2>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Web Developer &amp; WordPress Development</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>sya-akr.web.app</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>D.I. Yogyakarta, Indonesia</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>syaakrq@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+          </div>
           <p>
-            Saya seorang mahasiswa S1-Sistem Informasi di Universitas Amikom
-            Yogyakarta. Mampu bekerja dalam tim dan individu, dapat beradaptasi
-            dengan lingkungan baru, bertanggung jawab besar untuk membangun
-            proyek dan senang bekerja di bawah tekanan pada banyak proyek. Dan
-            memiliki motivasi yang tinggi.
+            I'm a Back-End Web Developer, some of the projects I built using PHP Framework CodeIgniter and Laravel, Sometimes use wordpress to build web-based applications. I am currently working at PT. PJI PuncakJaya Indonesia as IT Support, this is my new experience in the world of work. I also have a high interest in learning new things, such as currently learning Front-End Web Development.
           </p>
         </div>
       </div>
-    </section>
-    <!-- About section end -->
 
-    <!-- Experiences section start -->
-    <section id="experience" class="experience">
-      <h2>Pengalaman & Pendidikan</h2>
-      <p class="experience-paragraph">Pengalaman & Pendidikan</p>
-      <div class="row-new">
-        <div class="experience-2">
-          <h3>Pengalaman</h3>
-          <div class="card">
-            <div class="card-header">Nov - Des 2021</div>
-            <div class="card-body">
-              <h5 class="card-title">Website Building | WordPress</h5>
-              <h6 class="h6">Bintangsatu.com</h6>
-              <p class="card-text">
-                Membangun website portal berita dengan menggunakan CMS
-                Wordpress. Menyertakan beberapa plugin yang dibutuhkan pada
-                website.
-              </p>
-            </div>
+    </div><!-- End About Me -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #ff7800;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 16 16">
+                <path fill="#ff7800" d="M.946 0L2.23 14.4L7.992 16l5.777-1.602L15.055 0zm11.722 13.482l-4.644 1.287v.007l-.012-.004l-.012.004v-.007l-4.644-1.287L2.258 1.178h11.508zm-2.5-5.198l-.204 2.29l-1.972.532l-1.967-.53l-.126-1.41H4.126l.247 2.774l3.626 1.003l3.615-1.003l.485-5.422H5.662l-.161-1.809h6.758l.158-1.766H3.57l.477 5.341z" />
+              </svg>
+            </i>
+            <h3>HTML</h3>
           </div>
         </div>
-        <div class="education">
-          <h3>Pendidikan</h3>
-          <div class="card text-dark bg-light" style="max-width: 30rem">
-            <div class="card-header">Sep 2019 - Sekarang</div>
-            <div class="card-body">
-              <h5 class="card-title">Universitas AMIKOM Yogyakarta</h5>
-              <p class="card-text">Bachelor of Information Systems</p>
-            </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #3584e4;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 20 20">
+              	<path fill="#3584e4" fill-rule="evenodd" d="M10 12v8A10 10 0 0 1 8.17.17L10 2h5a5 5 0 0 1 5 4.99v9.02A4 4 0 0 1 16 20v-2a2 2 0 1 0 0-4h-4zm5.5-3a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" />
+              </svg>
+            </i>
+            <h3>PHP</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #ffbb2c;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+              	<path fill="#f5c211" d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v2a.75.75 0 0 1-1.5 0v-2a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h13.5a.75.75 0 0 1 0 1.5H1.75A1.75 1.75 0 0 1 0 14.25zm8.25 4A.75.75 0 0 1 9 6.5v4c0 1.005-.276 1.758-.845 2.232c-.543.453-1.201.518-1.655.518a.75.75 0 0 1 0-1.5c.346 0 .563-.06.695-.17c.106-.088.305-.335.305-1.08v-4a.75.75 0 0 1 .75-.75m3.026.83c.418-.498 1.075-.83 1.974-.83c.835 0 1.465.286 1.89.735a.75.75 0 0 1-1.09 1.03c-.11-.116-.33-.265-.8-.265c-.5 0-.72.168-.826.295A.767.767 0 0 0 12.25 8c0 .104.043.3.174.455c.107.127.325.295.826.295c.076 0 .149.011.218.032c.663.094 1.164.39 1.506.798c.394.47.526 1.024.526 1.42c0 .396-.132.95-.526 1.42c-.418.498-1.075.83-1.974.83c-.835 0-1.465-.286-1.89-.735a.75.75 0 0 1 1.09-1.03c.11.116.33.265.8.265c.5 0 .72-.168.826-.295A.767.767 0 0 0 14 11c0-.104-.043-.3-.174-.455c-.107-.127-.325-.295-.826-.295a.748.748 0 0 1-.218-.032c-.663-.095-1.164-.39-1.506-.798A2.263 2.263 0 0 1 10.75 8c0-.396.132-.95.526-1.42" />
+              </svg>
+            </i>
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #62a0ea;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              	<path fill="#62a0ea" d="M3.323 12c0 3.438 2 6.4 4.892 7.808L4.077 8.469A8.65 8.65 0 0 0 3.323 12M12 20.677a8.8 8.8 0 0 0 2.885-.492l-.062-.116l-2.67-7.307l-2.6 7.561c.77.23 1.593.354 2.447.354M13.192 7.93l3.139 9.33l.869-2.892c.37-1.2.654-2.061.654-2.807c0-1.077-.385-1.816-.708-2.385c-.446-.723-.854-1.33-.854-2.039c0-.8.6-1.538 1.462-1.538h.107A8.65 8.65 0 0 0 12 3.323a8.67 8.67 0 0 0-7.246 3.908l.554.015c.907 0 2.307-.115 2.307-.115c.477-.023.531.661.062.715c0 0-.47.062-1 .085l3.17 9.4l1.9-5.692l-1.355-3.708a16 16 0 0 1-.907-.077c-.47-.03-.416-.746.053-.723c0 0 1.431.115 2.285.115c.908 0 2.308-.115 2.308-.115c.469-.023.53.661.061.715c0 0-.469.054-1 .085m3.17 11.569a8.676 8.676 0 0 0 3.253-11.662a8.2 8.2 0 0 1-.6 4zM12 22a10 10 0 1 1 0-20a10 10 0 0 1 0 20" />
+              </svg>
+            </i>
+            <h3>WordPress</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #e01b24;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15">
+              	<path fill="#e01b24" d="m2 3.571l-.158-.474a.5.5 0 0 0-.327.596zm2.357-.785l.447-.224a.5.5 0 0 0-.605-.25zm4.714 9.428l-.447.224a.5.5 0 0 0 .705.205zM13 9.857l.257.429a.5.5 0 0 0 .165-.697zm-2.75-4.321l-.121-.485a.5.5 0 0 0-.3.753zm1.571-.393l.4-.3a.5.5 0 0 0-.52-.185zM13 6.714l.158.475a.5.5 0 0 0 .242-.775zM3.571 9.857l-.485.121a.5.5 0 0 0 .644.354zM2.158 4.046l2.357-.786l-.316-.949l-2.357.786zM3.91 3.009l2.918 5.837l.895-.447l-2.919-5.837zm2.918 5.837l1.796 3.592l.895-.447l-1.796-3.592zm2.5 3.797l3.93-2.357l-.515-.858l-3.929 2.358zm4.094-3.054l-1.65-2.593l-.844.537l1.65 2.593zm-1.65-2.593l-1.1-1.729l-.844.537l1.1 1.729zm-1.4-.975l1.57-.393l-.242-.97l-1.571.393zm1.05-.578L12.6 7.014l.8-.6l-1.179-1.571zm1.42.797l-1.65.55l.316.949l1.65-.55zm-1.65.55L7.117 8.148l.317.949l4.074-1.358zM7.117 8.148L3.413 9.383l.317.949l3.704-1.235zm-3.06 1.588L2.484 3.45l-.97.243l1.571 6.285zM2.5 1h10V0h-10zM14 2.5v10h1v-10zM12.5 14h-10v1h10zM1 12.5v-10H0v10zM2.5 14A1.5 1.5 0 0 1 1 12.5H0A2.5 2.5 0 0 0 2.5 15zM14 12.5a1.5 1.5 0 0 1-1.5 1.5v1a2.5 2.5 0 0 0 2.5-2.5zM12.5 1A1.5 1.5 0 0 1 14 2.5h1A2.5 2.5 0 0 0 12.5 0zm-10-1A2.5 2.5 0 0 0 0 2.5h1A1.5 1.5 0 0 1 2.5 1z" />
+              </svg>
+            </i>
+            <h3>Laravel</h3>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #dd4814;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25.93" height="32" viewBox="0 0 256 316">
+              	<path fill="#dd4814" d="M81.834 315.107c-20.223-8.935-33.964-28.183-35.767-50.228a70.92 70.92 0 0 1 32.181-55.763c-3.122 7.614-2.364 16.282 1.97 23.247a21.34 21.34 0 0 0 21.74 8.48c11.84-3.329 18.775-15.622 15.446-27.472a22.6 22.6 0 0 0-6.777-10.747A49.36 49.36 0 0 1 92.896 157.5a46.2 46.2 0 0 1 14.392-23.444c-5.32 14.185 9.683 28.182 19.75 35.068a523 523 0 0 1 51.537 35.274c17.997 14.185 27.808 36.388 26.272 59.103c-4.049 24.173-21.15 44.13-44.456 51.616c46.623-10.372 94.693-47.41 95.609-99.942c-.916-42.032-26.005-79.75-64.353-96.929h-1.704a15.7 15.7 0 0 1 1.182 6.511a24.5 24.5 0 0 0 0-4.334a21.2 21.2 0 0 1 0 5.122c-2.916 11.949-14.973 19.307-26.951 16.391c-4.787-1.182-9.062-3.87-12.136-7.752c-15.367-19.7 0-42.12 2.571-63.792A81.04 81.04 0 0 0 121.07 0c11.239 18.736-3.734 43.342-14.619 57.34c-10.904 13.997-26.665 24.429-39.51 36.643c-13.84 12.875-26.527 27.03-37.914 42.16C4.41 166.217-5.253 205.885 2.755 243.907c10.984 36.644 41.441 64.176 79.001 71.318h.207z" />
+              </svg>
+            </i>
+            <h3>CodeIgniter</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-4">
+          <div class="icon-box">
+            <i style="color: #62a0ea;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+              	<path fill="#62a0ea" d="M9.5 14v-1H11v.5h2v-1h-2.5c-.55 0-1-.45-1-1V10c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v1H13v-.5h-2v1h2.5c.55 0 1 .45 1 1V14c0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1m7.5 1h3c.55 0 1-.45 1-1v-1.5c0-.55-.45-1-1-1h-2.5v-1h2v.5H21v-1c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v1.5c0 .55.45 1 1 1h2.5v1h-2V13H16v1c0 .55.45 1 1 1m-9-5c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-1H6.5v.5h-2v-3h2v.5H8z" />
+              </svg>
+            </i>
+            <h3>CSS</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-game-line" style="color: #ffbb2c;"></i>
+            <h3>Game</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-music-line" style="color: #5578ff;"></i>
+            <h3>Music</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-movie-line" style="color: #e80368;"></i>
+            <h3>Movie</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-code-box-line" style="color: #e361ff;"></i>
+            <h3>Code</h3>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Experiences section end -->
 
-    <!-- Projects section start -->
-    <section id="project" class="project">
-      <h2>Proyek</h2>
-      <p>Proyek</p>
+    </div><!-- End Interests -->
 
-      <div class="row-new">
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="assets/img/projects/project-2.png"
-            alt="Proyek 1"
-          />
-          <h3 class="project-card-title">Desa.In</h3>
-          <p class="project-card-category">Web Application</p>
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Bachelor of Information Systems</h4>
+            <h5>2019 - 2023</h5>
+            <p><em>University of AMIKOM Yogyakarta, D.I. Yogyakarta, Indonesia</em></p>
+            <p>Concentrate on understanding and logic in e-commerce web development using CodeIgniter.</p>
+          </div>
         </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="assets/img/projects/project-1.png"
-            alt="Proyek 1"
-          />
-          <h3 class="project-card-title">Lezzetli</h3>
-          <p class="project-card-category">Web Application</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="assets/img/projects/project-3.png"
-            alt="Proyek 1"
-          />
-          <h3 class="project-card-title">BintangSatu.com</h3>
-          <p class="project-card-category">Web Application</p>
-        </div>
-        <div class="project-card">
-          <img
-            class="project-card-img"
-            src="assets/img/projects/project-4.png"
-            alt="Proyek 1"
-          />
-          <h3 class="project-card-title">SPK (SAW)</h3>
-          <p>
-            Pemilihan marketplace<br />
-            terbaik
-          </p>
-          <p class="project-card-category">Web Application</p>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Work Experience</h3>
+          <div class="resume-item">
+            <h4>IT Support</h4>
+            <h5>2023 - Present</h5>
+            <p><em>PT. PJI PuncakJaya Indonesia, D.I. Yogyakarta, Indonesia </em></p>
+            <p>
+            <ul>
+              <li>Responsible for software and hardware maintenance.</li>
+              <li>Maintain system and data security and integrity.</li>
+              <li>Ensure all computer components function properly and in accordance with user needs.</li>
+              <li>Manage and monitor the network.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>WordPress Development</h4>
+            <h5>2021 - 2021</h5>
+            <p><em>PT. Bintang Media Visual, Lampung, Indonesia</em></p>
+            <p>
+            <ul>
+              <li>Build a news portal website using Wordpress CMS.</li>
+              <li>Include some plugins needed on the website.</li>
+            </ul>
+            </p>
+          </div>
+
+          <div class="resume-item">
+            <h4>WordPress Development</h4>
+            <h5>2023 - 2023</h5>
+            <p><em>HotTails and CockTails, Arkansas, U.S.</em></p>
+            <p>
+            <ul>
+              <li>Implement website design on wordpress using elementor</li>
+            </ul>
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Projects section end -->
 
-    <a href="#" class="back-top" id="back-top">
-      <i class="fa-solid fa-angle-up fa-sm"></i>
-    </a>
+    </div>
+  </section><!-- End Resume Section -->
 
-    <hr class="text-light my-4" />
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
 
-    <!-- Footer -->
-    <footer class="text-center text-light">Created by Syaiful | © 2022</footer>
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
 
-    <!-- Bootstrap 5 | JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-  </body>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-wordpress"></i></div>
+            <h4><a href="">WordPress Development</a></h4>
+            <p>We provide website development services to help your business have an online presence.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-data"></i></div>
+            <h4><a href="">Back-End Development</a></h4>
+            <p>We provide Back-End Development services to create an optimal software solution for your business needs in managing the database and server side.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-code-alt"></i></div>
+            <h4><a href="">Custom Software Development</a></h4>
+            <p>We provide custom Website Development services using programming languages that support Clients can freely pour all ideas for the desired business.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-custom">Custom Web</li>
+            <li data-filter=".filter-wordpress">WordPress</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>HotTails and CockTails</h4>
+              <p>WordPress</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HotTails and CockTails"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>BintangSatu.com</h4>
+              <p>WordPress</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BintangSatu.com"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Lizzetli</h4>
+              <p>Custom Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lizzetli"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Sleman, D.I. Yogyakarta, Indonesia</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/sya.akrq" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sya-akrq" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>syaakrq@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+62 811 7267 158</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
